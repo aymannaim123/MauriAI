@@ -38,6 +38,7 @@
       <p class="lead" data-aos="fade-up">Découvrez <strong>MauriAI</strong>, la solution IA qui révolutionne votre média</p>
       <a href="#pricing" class="btn btn-primary btn-lg" data-aos="zoom-in">Voir nos offres</a>
     </div>
+    <div class="wave"></div>
   </header>
 
   <div class="container">
@@ -83,7 +84,7 @@
             <li>Publication automatique</li>
             <li>Q&A IA gratuite</li>
           </ul>
-          <div class="pricing-meta"><span>30–40 jours</span><span>Maint. 3 500 MAD/an</span></div>
+          <div class="pricing-meta"><span>15 jours</span><span>Maint. 3 500 MAD/an</span></div>
           <div class="pricing-price">22 000 MAD</div>
           <button class="btn-choose">Choisir Alpha</button>
         </div>
@@ -100,7 +101,7 @@
             <li>Newsletter IA</li>
             <li>Planification éditoriale avancée</li>
           </ul>
-          <div class="pricing-meta"><span>30–40 jours</span><span>Maint. 5 500 MAD/an</span></div>
+          <div class="pricing-meta"><span>25 jours</span><span>Maint. 5 500 MAD/an</span></div>
           <div class="pricing-price">38 000 MAD</div>
           <button class="btn-choose">Choisir Bêta</button>
         </div>
@@ -117,7 +118,7 @@
             <li>Services IA payants</li>
             <li>E-commerce intégré</li>
           </ul>
-          <div class="pricing-meta"><span>30–40 jours</span><span>Maint. 7 500 MAD/an</span></div>
+          <div class="pricing-meta"><span>35–40 jours</span><span>Maint. 7 500 MAD/an</span></div>
           <div class="pricing-price">55 000 MAD</div>
           <button class="btn-choose">Choisir Gamma</button>
         </div>
@@ -126,26 +127,28 @@
 
     <!-- COMPARATIVE TABLE -->
     <h2 class="section-title" data-aos="fade-up">Comparatif</h2>
-    <div class="table-responsive table-boost" data-aos="fade-up" data-aos-delay="100">
-      <table class="table table-bordered table-striped mb-5">
-        <thead class="table-dark">
-          <tr>
-            <th>Fonctionnalité</th><th>Alpha</th><th>Bêta</th><th>Gamma</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Responsive & rubriques</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
-          <tr><td>Veille & détection IA</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
-          <tr><td>Rédaction bilingue</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
-          <tr><td>Validation 1 clic</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
-          <tr><td>Publication automatique</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
-          <tr><td>Visuels & Podcast</td><td>–</td><td>✔️</td><td>✔️</td></tr>
-          <tr><td>Social & Newsletter</td><td>–</td><td>✔️</td><td>✔️</td></tr>
-          <tr><td>Dashboard & analytics</td><td>–</td><td>–</td><td>✔️</td></tr>
-          <tr><td>Modération & réponses IA</td><td>–</td><td>–</td><td>✔️</td></tr>
-          <tr><td>Services IA payants</td><td>–</td><td>–</td><td>✔️</td></tr>
-        </tbody>
-      </table>
+    <div class="table-boost-wrapper" data-aos="fade-up" data-aos-delay="100">
+      <div class="table-boost">
+        <table class="table table-bordered table-striped mb-5">
+          <thead class="table-dark">
+            <tr>
+              <th>Fonctionnalité</th><th>Alpha</th><th>Bêta</th><th>Gamma</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Responsive & rubriques</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
+            <tr><td>Veille & détection IA</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
+            <tr><td>Rédaction bilingue</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
+            <tr><td>Validation 1 clic</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
+            <tr><td>Publication automatique</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
+            <tr><td>Visuels & Podcast</td><td>–</td><td>✔️</td><td>✔️</td></tr>
+            <tr><td>Social & Newsletter</td><td>–</td><td>✔️</td><td>✔️</td></tr>
+            <tr><td>Dashboard & analytics</td><td>–</td><td>–</td><td>✔️</td></tr>
+            <tr><td>Modération & réponses IA</td><td>–</td><td>–</td><td>✔️</td></tr>
+            <tr><td>Services IA payants</td><td>–</td><td>–</td><td>✔️</td></tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <!-- CONTACT -->
@@ -167,6 +170,12 @@
   <script>
     // Initialize animate on scroll
     AOS.init({ duration: 800, once: true });
+
+    // Navbar background change on scroll
+    const nav = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 50);
+    });
   </script>
 </body>
 </html>
