@@ -371,13 +371,25 @@ body {
 }
 
 
-/* ==== Comparative Table ==== */
+/* ==== Comparative Table Responsive ==== */
+
+/* Wrap the table in a horizontally scrollable container */
+.table-boost-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Ensure the table takes its intrinsic width */
 .table-boost {
   margin-top: 3rem;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  width: max-content;          /* Allow intrinsic width */
+  min-width: 100%;             /* But at least fill container */
 }
+
+/* Standard table styling */
 .table-boost table {
   border-collapse: separate;
   width: 100%;
@@ -412,6 +424,33 @@ body {
   font-weight: 600;
   text-align: left;
 }
+
+/* Mobile-specific tweaks */
+@media (max-width: 768px) {
+  .table-boost-wrapper::-webkit-scrollbar {
+    height: 6px;
+  }
+  .table-boost-wrapper::-webkit-scrollbar-thumb {
+    background: var(--clr-mid);
+    border-radius: 3px;
+  }
+  .table-boost-wrapper::-webkit-scrollbar-track {
+    background: var(--clr-bg);
+  }
+  /* Reduce padding on cells to fit more content */
+  .table-boost th,
+  .table-boost td {
+    padding: 0.75rem 0.5rem;
+  }
+  /* Slightly shrink font-size for readability */
+  .table-boost thead th {
+    font-size: 0.8rem;
+  }
+  .table-boost td {
+    font-size: 0.85rem;
+  }
+}
+
 
 /* ==== Footer (Upgraded) ==== */
 footer {
