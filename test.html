@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IAAI Academy & MauriAI</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS CSS for animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom Styles -->
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">IAAI Academy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#features">Fonctionnalités</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">Offres</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero mb-5">
+    <div class="overlay"></div>
+    <div class="container text-center">
+      <h1 data-aos="fade-down">IAAI Academy présente</h1>
+      <p class="lead" data-aos="fade-up">Découvrez <strong>MauriAI</strong>, la solution IA qui révolutionne votre média</p>
+      <a href="#pricing" class="btn btn-primary btn-lg" data-aos="zoom-in">Voir nos offres</a>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- FEATURES -->
+    <h2 id="features" class="section-title" data-aos="fade-up">Pourquoi MauriAI ?</h2>
+    <div class="row gy-5">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="feature">
+          <div class="feature-icon">🤖</div>
+          <h5>Veille intelligente</h5>
+          <p>Surveillance 24/7 des réseaux sociaux et du web.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="feature">
+          <div class="feature-icon">✍️</div>
+          <h5>Rédaction bilingue</h5>
+          <p>Génération instantanée d’articles en français et arabe.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature">
+          <div class="feature-icon">🚀</div>
+          <h5>Diffusion multicanal</h5>
+          <p>Publication automatique sur site, réseaux sociaux et newsletters.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRICING PLANS -->
+    <h2 id="pricing" class="section-title" data-aos="fade-up">Nos Formules</h2>
+    <div class="row gy-5">
+      <!-- Alpha Plan -->
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="pricing-card">
+          <div class="pricing-header"><h4>Alpha</h4></div>
+          <ul>
+            <li>Responsive site & rubriques clés</li>
+            <li>Veille IA & détection de scoops</li>
+            <li>Rédaction bilingue (AR/FR)</li>
+            <li>Validation 1 clic</li>
+            <li>Publication automatique</li>
+            <li>Q&A IA gratuite</li>
+          </ul>
+          <div class="pricing-meta"><span>30–40 jours</span><span>Maint. 3 500 MAD/an</span></div>
+          <div class="pricing-price">22 000 MAD</div>
+          <button class="btn-choose">Choisir Alpha</button>
+        </div>
+      </div>
+      <!-- Beta Plan -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="pricing-card">
+          <div class="pricing-header"><h4>Bêta</h4></div>
+          <ul>
+            <li>Toutes les fonctions Alpha +</li>
+            <li>Visuels & infographies IA</li>
+            <li>Podcast hebdo IA (FR/AR)</li>
+            <li>Diffusion réseaux sociaux</li>
+            <li>Newsletter IA</li>
+            <li>Planification éditoriale avancée</li>
+          </ul>
+          <div class="pricing-meta"><span>30–40 jours</span><span>Maint. 5 500 MAD/an</span></div>
+          <div class="pricing-price">38 000 MAD</div>
+          <button class="btn-choose">Choisir Bêta</button>
+        </div>
+      </div>
+      <!-- Gamma Plan -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="pricing-card">
+          <div class="pricing-header"><h4>Gamma</h4></div>
+          <ul>
+            <li>Toutes les fonctions Bêta +</li>
+            <li>Dashboard & analytics IA</li>
+            <li>Rapport quotidien IA</li>
+            <li>Modération & réponses IA</li>
+            <li>Services IA payants</li>
+            <li>E-commerce intégré</li>
+          </ul>
+          <div class="pricing-meta"><span>30–40 jours</span><span>Maint. 7 500 MAD/an</span></div>
+          <div class="pricing-price">55 000 MAD</div>
+          <button class="btn-choose">Choisir Gamma</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMPARATIVE TABLE -->
+    <h2 class="section-title" data-aos="fade-up">Comparatif</h2>
+    <div class="table-responsive table-boost" data-aos="fade-up" data-aos-delay="100">
+      <table class="table table-bordered table-striped mb-5">
+        <thead class="table-dark">
+          <tr>
+            <th>Fonctionnalité</th><th>Alpha</th><th>Bêta</th><th>Gamma</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Responsive & rubriques</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
+          <tr><td>Veille & détection IA</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
+          <tr><td>Rédaction bilingue</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
+          <tr><td>Validation 1 clic</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
+          <tr><td>Publication automatique</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
+          <tr><td>Visuels & Podcast</td><td>–</td><td>✔️</td><td>✔️</td></tr>
+          <tr><td>Social & Newsletter</td><td>–</td><td>✔️</td><td>✔️</td></tr>
+          <tr><td>Dashboard & analytics</td><td>–</td><td>–</td><td>✔️</td></tr>
+          <tr><td>Modération & réponses IA</td><td>–</td><td>–</td><td>✔️</td></tr>
+          <tr><td>Services IA payants</td><td>–</td><td>–</td><td>✔️</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact" class="text-center mb-5" data-aos="fade-up">
+      <h2 class="section-title">Contactez-nous</h2>
+      <p>IAAI Academy<br>
+      <a href="mailto:contact.iaaiac@gmail.com">contact.iaaiac@gmail.com</a> | +212 6 84 47 56 39</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 IAAI Academy – MauriAI Solution IA</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize animate on scroll
+    AOS.init({ duration: 800, once: true });
+  </script>
+</body>
+</html>
